@@ -1,23 +1,61 @@
 #body {
-    width: 95%;
+    width: 100%;
+    height: 100%;
     }
 
 #banner {
     position: relative;
-    top: 5px;
     text-align: center;
     border: 2px solid black;
-    border-radius: 2px;
     background-color: #5DBAFF;
     }
 
-#nav {
-    color: #2601FF;
-    margin: 5px 5px 5px 5px auto;
-    width: 100%;
+#content {
+    overflow: scroll;
+    border-collapse: collapse;
     }
 
+#nav a {
+    color: #2601FF;
+    font-size: 16px;
+    background-color: yellow;
+    justify: left;
+    float: top;
+    display: block;
+    border: 2px solid black;
+    border-collapse: collapse;
+    }
+
+#nav ul {
+    list-style-type: none;
+    border-collapse: collapse;
+    }
+
+#nav li {
+    margin: 2px;
+    width: auto;
+    justify: left;
+    }
+
+#view {
+    float: left;
+    font-size: 12px;
+    }
 
 #footer {
+    position: relative;
     text-align: center;
+    font-size: 12px;
+    bottom: 10px;
+    padding: 5px 5px 5px 5px auto;
+    margin: 10px 10px 10px 10px;
+    float: bottom;
+    }
+
+#presentingsponsor img {
+    height: 130px;
+    }
+
+#sponsors img {
+    height: 65px;
     }
