@@ -1,0 +1,23 @@
+#body {
+    width: 95%;
+    }
+
+#banner {
+    position: relative;
+    top: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: #5DBAFF;
+    }
+
+#nav {
+    color: #2601FF;
+    margin: 5px 5px 5px 5px auto;
+    width: 100%;
+    }
+
+
+#footer {
+    text-align: center;
+    }
