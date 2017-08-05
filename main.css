@@ -4,46 +4,67 @@
     }
 
 #banner {
+    width: 100%;
     position: relative;
     text-align: center;
     border: 2px solid black;
-    background-color: #5DBAFF;
+    background-color: #FFF8D6;
     }
 
+
 #content {
+    float: top;
     overflow: scroll;
     border-collapse: collapse;
+    text-align: center;
+    }
+
+#nav {
+    text-align: left;
     }
 
 #nav a {
     color: #2601FF;
     font-size: 16px;
     background-color: yellow;
-    justify: left;
     float: top;
     display: block;
-    border: 2px solid black;
+    border: 1px solid black;
     border-collapse: collapse;
+    padding: 2px;
     }
 
-#nav ul {
-    list-style-type: none;
+nav {
+    list-style: none;
     border-collapse: collapse;
     }
 
 #nav li {
     margin: 2px;
-    width: auto;
-    justify: left;
+    }
+
+#nav a {
+    font-size: 10px;
+    }
+
+#nav a:hover {
+    left: 1px;
+    background-color: red;
     }
 
 #view {
+    text-align: left;
     float: left;
     font-size: 12px;
+    margin: 5px auto;
+    }
+
+#script {
+    float: right;
     }
 
 #footer {
-    position: relative;
+    position: static;
     text-align: center;
     font-size: 12px;
     bottom: 10px;
