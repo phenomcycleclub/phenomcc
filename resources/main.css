@@ -18,7 +18,7 @@
 
 nav a:hover {
     background-color: #FFF8D6;
-
+}
 
 nav a:active {
     background-color: #1CFAFF;
@@ -54,9 +54,6 @@ nav a:active {
     height: 130px;
     }
 
-#footer {
-    bottom: 10px;
-}
 #sponsors img:hover {
     background-color: teal;
     border: 1px solid black;
