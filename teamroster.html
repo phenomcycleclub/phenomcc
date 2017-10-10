@@ -23,44 +23,66 @@
 
     <!-- CONTENT BELOW -->
     <div class="row" id="content">
-        <div class="col-sm-2" id="nav">
-            <nav class=navbar navbar-toggleable-md navbar-light bg-faded">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="http://placeholder.html">Our Story</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://placeholder.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://placeholder.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://placeholder.html">Race Reports</a></li>
-                    <li class="nav-item"><a class="nav-link" href="teamroster.html">Race Team Roster</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="col-lg-2" id="view">
-            <ul id="IDbuttons" style="list-style-type: none;">
-
+        <nav class="col-sm-2" class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="http://placeholder.html">Our Story</a>
+                <a class="nav-item nav-link" href="http://placeholder.html">Events</a>
+                <a class="nav-item nav-link" href="http://placeholder.html">About</a>
+                <a class="nav-item nav-link" href="http://placeholder.html">Race Reports</a>
+                <a class="nav-item nav-link" href="teamroster.html">Race Team Roster</a>
+            </div>
+        </nav>
+        <div class="col-sm-4" id="view">
+            <h1>Team Roster</h1>
+            <ul id="NameButtons" style="list-style-type: none;">
             </ul>
         </div>
-        <div class="col-lg-4" id="roster-content">
-            <p>roster content</p>
+        <div class="col-sm-6" id="script">
+            <div class="col-lg-4" id="roster-content">
+                <p>roster content</p>
+            </div>
+            <script>
+                var teamMembers =
+                    {"Colin Bromley":
+                        {"photo":"<img src='resources/photos/colinbromley.jpg'>",
+                        "text":"Colin is originally from Pennsylvania and has been racing bikes in Central Texas for 5 years"
+                        },
+                     "Jason Baker":
+                        {"photo":"<img src='resources/photos/jasonbaker.jpg'>",
+                        "text":"Jason is from Austin and has been racing for 4 years."
+                        },
+                     "Michael Orsow":{"text":"Mike is a total baller from Oregon."},
+                    };
+
+                $.each(teamMembers, function(key){
+                    $("#NameButtons").append("<li>"+key+"</li>");
+                    });
+
+                $(document).ready(function(){
+                    $("#NameButtons li").click(function(){
+                      var fullid = $(this).text();
+                      $("#roster-content").replaceWith('<div id="roster-content"><p>'+teamMembers[fullid].text+"</p></div>");
+                      });
+                });
+            </script>
         </div>
     </div>
 
         <hr>
 
         <!--  Footer sponsor section  -->
-        <div id="footer">
-            <div class="row">
-                <div class="col-md-4" id="presentingsponsor">
-                    <p>Our club is supported by these generous sponsors:</p>
-                    <a href="http://phobio.com"><img src="resources/phobio_logo.png"/> </a>
-                </div>
-                <div class="col-md-8" id="sponsors">
-                    <a href="http://rubbletrucking.cc"><img src="resources/rubble_logo.png"></a>
-                    <a href="http://flattrackcoffee.com"><img src="resources/flat_track_logo.png"></a>
-                    <a href="http://finesoutherngentlemen.com"><img src="resources/fsg_logo.png"></a>
-                    <a href="http://cycleast.com"><img src="resources/cycleast_logo.png"></a>
-                    <a href="http://bradhoustonlaw.com"><img src="resources/brad_houston_logo.png"></a>
-                    <a href="http://pavonettiarchitecture.com"><img src="resources/pavonetti_logo.png"></a>
-                </div>
+        <div  class="row" id="footer">
+            <div class="col-md-4" id="presentingsponsor">
+                <p>Our club is supported by these generous sponsors:</p>
+                <a href="http://phobio.com"><img src="resources/phobio_logo.png"/> </a>
+            </div>
+            <div class="col-md-8" id="sponsors">
+                <a href="http://rubbletrucking.cc"><img src="resources/rubble_logo.png"></a>
+                <a href="http://flattrackcoffee.com"><img src="resources/flat_track_logo.png"></a>
+                <a href="http://finesoutherngentlemen.com"><img src="resources/fsg_logo.png"></a>
+                <a href="http://cycleast.com"><img src="resources/cycleast_logo.png"></a>
+                <a href="http://bradhoustonlaw.com"><img src="resources/brad_houston_logo.png"></a>
+                <a href="http://pavonettiarchitecture.com"><img src="resources/pavonetti_logo.png"></a>
             </div>
         </div>
 </div>
