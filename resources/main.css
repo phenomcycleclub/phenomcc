@@ -16,37 +16,11 @@
     margin: 5px;
     }
 
-#nav {
-    max-width: 300px;
-    list-style-type: none;
-    right-margin: 0 auto;
-    left-margin: 0 auto;
-    text-align: center;
-    }
-
-#nav li {
-    float: left;
-    padding: 1px auto;
-    margin: 2px;
-    text-align: left;
-    }
-
-#nav a {
-    font-size: 12px;
-    color: #2601FF;
-    background-color: #DAEFFF;
-    border: 1px solid black;
-    padding: 2px;
-    }
-
-#nav ul {
-    }
-
-#nav a:hover {
+nav a:hover {
     background-color: #FFF8D6;
     }
 
-#nav a:active {
+nav a:active {
     background-color: #1CFAFF;
     }
 
@@ -57,6 +31,7 @@
     }
 
 #footer {
+    overflow: scroll;
     display: inline;
     position: relative;
     text-align: center;
@@ -90,10 +65,9 @@
     padding: 5px;
     }
 
-#content {
-    max-height: 10%;
-    min-height: 10%
+#roster-content {
     overflow: scroll;
-    border-collapse: collapse;
-    text-align: center;
+    }
+#roster-content img {
+    width: 300px;
     }
